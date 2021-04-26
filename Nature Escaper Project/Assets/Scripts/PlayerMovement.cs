@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     //public variables, visible in Unity inspector
     public float forceStrength;
 
+    //variable to hold thr audio clip that should play when we walk
+    public AudioClip footstepSound;
+
     //called once per frame
     public void Update()
     {
@@ -35,6 +38,21 @@ public class PlayerMovement : MonoBehaviour
 
         //Move in the correct direction with the set forceStrength
         ourRigidbody.AddForce(Vector2.left * forceStrength);
+
+        //Get the audio source so we can play footstep sounds
+        AudioSource ourAudioSource = GetComponent<AudioSource>();
+
+        //Check if our clip is already playing
+        if (ourAudioSource.clip == footstepSound && ourAudioSource.isPlaying)
+        {
+            //Do nothing - our audio source is already playing the sound effect we want
+        }
+        else
+        {
+            ourAudioSource.clip = footstepSound;
+            ourAudioSource.Play();
+        }
+
     }
     public void MoveRight()
     {
@@ -43,6 +61,21 @@ public class PlayerMovement : MonoBehaviour
 
         //Move in the correct direction with the set forceStrength
         ourRigidbody.AddForce(Vector2.right * forceStrength);
+
+        //Get the audio source so we can play footstep sounds
+        AudioSource ourAudioSource = GetComponent<AudioSource>();
+
+        //Check if our clip is already playing
+        if (ourAudioSource.clip == footstepSound && ourAudioSource.isPlaying)
+        {
+            //Do nothing - our audio source is already playing the sound effect we want
+        }
+        else
+        {
+            ourAudioSource.clip = footstepSound;
+            ourAudioSource.Play();
+        }
+
     }
    
 
