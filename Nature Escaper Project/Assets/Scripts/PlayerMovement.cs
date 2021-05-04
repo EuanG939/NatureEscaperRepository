@@ -77,6 +77,33 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-   
+
+
+    public void MoveUp()
+    {
+        //get the rigidbody that we'll be using for movement
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        //Move in the correct direction with the set forceStrength
+        ourRigidbody.AddForce(Vector2.up * forceStrength);
+
+        //Get the audio source so we can play footstep sounds
+        AudioSource ourAudioSource = GetComponent<AudioSource>();
+
+        //Check if our clip is already playing
+        if (ourAudioSource.clip == footstepSound && ourAudioSource.isPlaying)
+        {
+            //Do nothing - our audio source is already playing the sound effect we want
+        }
+        else
+        {
+            ourAudioSource.clip = footstepSound;
+            ourAudioSource.Play();
+        }
+
+    }
+
+
+
 
 }
