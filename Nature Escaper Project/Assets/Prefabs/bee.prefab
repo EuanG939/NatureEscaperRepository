@@ -110,7 +110,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -161,10 +161,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceStrength: 12
   patrolPoints:
-  - {x: 2, y: 4}
-  - {x: 2, y: 3}
-  - {x: 3, y: 2}
-  - {x: 2, y: 4}
+  - {x: 4, y: -2}
+  - {x: 4, y: -3}
+  - {x: 5, y: -3}
+  - {x: 5, y: -2}
   stopDistance: 0.1
 --- !u!114 &7841900238096971326
 MonoBehaviour:
