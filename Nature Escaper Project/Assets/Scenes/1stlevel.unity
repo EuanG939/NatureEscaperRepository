@@ -487,7 +487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224055709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.062, y: -11.21, z: 0}
+  m_LocalPosition: {x: 0.062, y: -11.94, z: 0}
   m_LocalScale: {x: 2.5931895, y: 1.8767112, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -543,7 +543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &355408072
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2100,6 +2100,11 @@ PrefabInstance:
       propertyPath: patrolPoints.Array.data[3].x
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7841900238096971320, guid: 90ff82a9744021c4eb34a44ec7c842b2,
+        type: 3}
+      propertyPath: forceStrength
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7841900238096971321, guid: 90ff82a9744021c4eb34a44ec7c842b2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2168,12 +2173,12 @@ PrefabInstance:
     - target: {fileID: 7841900238096971326, guid: 90ff82a9744021c4eb34a44ec7c842b2,
         type: 3}
       propertyPath: forceStrength
-      value: 18
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7841900238096971327, guid: 90ff82a9744021c4eb34a44ec7c842b2,
         type: 3}
       propertyPath: m_LinearDrag
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ff82a9744021c4eb34a44ec7c842b2, type: 3}
