@@ -49,8 +49,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            ourAudioSource.clip = footstepSound;
-            ourAudioSource.Play();
+           // ourAudioSource.clip = footstepSound;
+           // ourAudioSource.Play();
         }
 
     }
@@ -72,8 +72,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            ourAudioSource.clip = footstepSound;
-            ourAudioSource.Play();
+           // ourAudioSource.clip = footstepSound;
+           // ourAudioSource.Play();
         }
 
     }
@@ -97,8 +97,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            ourAudioSource.clip = footstepSound;
-            ourAudioSource.Play();
+            //ourAudioSource.clip = footstepSound;
+            //ourAudioSource.Play();
         }
 
     }
